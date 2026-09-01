@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# output
+*.png
+*.svg
+*.pdf
+*.jpg
+
+# --- Cviceni 06: vlastni blok ---
+# Vystupni grafy (graphs/) ani ulozeny natrenovany model (models/) se do
+# repozitare nekomituji; adresare vsak musi zustat verzovane pres .gitkeep.
+# Dataset se v tomto cviceni bere primo ze scikit-learn, slozka data/ tu neni.
+graphs/*.png
+models/*.npz
+!graphs/.gitkeep
+!models/.gitkeep
+# Vedlejsi (negitovane) reseni papirovych prikladu
+priklady_06_reseni.md
+.vscode/

@@ -1,0 +1,18 @@
+# Cviceni 06 — kNN + validace modelu & vyhodnoceni klasifikace
+# Hyperparametry experimentu. Menite zde, ne v kodu.
+
+data:
+  imbalance_ratio: 0.1       # cilovy podil minoritni tridy pro demonstraci nevyvazenosti
+  random_state: 42
+
+knn:
+  k: 5
+  k_values: [1, 3, 5, 7, 15, 31]   # prehled pres k pro krivku preuceni
+
+validation:
+  test_size: 0.2
+  n_folds: 5
+  n_bootstrap: 100
+
+feature_selection:           # experiment navazujici na cv5
+  n_features_grid: [2, 5, 10, 20, 30]
